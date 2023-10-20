@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        /*Aluno: Tiago de Jesus Ferreira
+          Ru: 3229818*/
+        /*Posição e tamanho da imagem*/
+        body{
+            background-image:url(man-walking-by-orange.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position-x: 30%;
+            background-position-y: 30%;
+            
+           
+            
+            
+        }
+        /*Cor dos titulos*/
+        * .fundo{
+            color:rgb(255, 255, 255,0.5);
+            background-color: transparent;
+            transform: translate(730px ,0px);
+            position:relative;
+            width: 500px;
+            font-size: 20px;
+           
+        }
+        /*Tamanho e posição das letras do menu*/
+        ul{
+           
+           list-style-type: none;
+           
+           font-size: 25px;
+           margin-top: -650px;
+          
+        }
+        /*Posição do menu e a cor*/
+        a{
+        
+           margin: 2%;
+           color: rgb(255, 255, 255,0.5);
+            margin-left: 10px;
+        }
+        /*Cor do menu*/
+        .textcolor{
+            color:rgb(255, 255, 255,0.6);
+        }
+        /*Mudar a cor do menu quando passar o mouse*/
+        a:hover{
+            background-color: rgb(4, 53, 77);
+        }
+    </style>
+</head>
+<body>
+    <!--Cor dos titulos-->
+    <section class="fundo">
+        <!--Posição e cor do Titulo e a cor da linha-->
+    <h2 style="font-size: 55px; margin-left: -25px; text-decoration-line:underline; 
+    text-decoration-color: rgb(80, 167, 255,30%); text-decoration-style:double;">Perguntas </h2>
+    <h2 style="font-size: 50px; margin-left: 185px; margin-top: -65px ;">&</h2><br>
+    <h2 style="font-size: 55px; margin-left: 225px; margin-top: -105px ;text-decoration-line:underline;
+     text-decoration-color: rgb(80, 167, 255,30%); text-decoration-style:double;">Opiniões</h2><br>
+    <!--Definição do tipo de texto-->
+    <h2 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; ">Entre em Contato</h2>
+    <!--Formulario para entrar em contato-->
+    <form action="processar_formulario" method="POST">
+        <!--Definição da posição e  tipo de texto, -->
+        <label style="margin-left:4px ;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"
+         for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br><br>
+
+        <label style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" for="mensagem">
+            Mensagem:</label>
+        <div>
+            <!-- Tamanho da caixa de texto-->
+        <textarea id="mensagem" name="mensagem" style="width: 500px; height: 150px; resize:none;">
+        </textarea><br>
+    </div>
+
+        <input type="submit" value="Enviar" style="background-color: rgb(231, 66, 15,0.5) ; 
+        color:rgb(255, 255, 255,0.7);font-size: 20px;">
+    </form>
+</section>
+<!--Menu da página-->
+<ul>
+    <li>
+        <!--O menu do texto definido em duas cores definidas nas classes-->
+        <h5><a href="file:///C:/Users/thdej/OneDrive/%C3%81rea%20de%20Trabalho/Sites%20Html%20-%20Estudando/Primeira%20aula/Terceria%20aula/trabalhoportifolio/index.html"><span class=textcolor>In</span>icio </a>
+            <a href="file:///C:/Users/thdej/OneDrive/%C3%81rea%20de%20Trabalho/Sites%20Html%20-%20Estudando/Primeira%20aula/Terceria%20aula/trabalhoportifolio/portfolioformacao.html"><span class=textcolor>Form</span>ação Academica</a>
+            <a href="file:///C:/Users/thdej/OneDrive/%C3%81rea%20de%20Trabalho/Sites%20Html%20-%20Estudando/Primeira%20aula/Terceria%20aula/trabalhoportifolio/projetopart2.html"><span class=textcolor>Pro</span>jetos</a>
+            <a href="file:///C:/Users/thdej/OneDrive/%C3%81rea%20de%20Trabalho/Sites%20Html%20-%20Estudando/Primeira%20aula/Terceria%20aula/trabalhoportifolio/ProjetoTemplate.html"><span class="textcolor">Temp</span>late</a>
+            <a href="file:///C:/Users/thdej/OneDrive/%C3%81rea%20de%20Trabalho/Sites%20Html%20-%20Estudando/Primeira%20aula/Terceria%20aula/trabalhoportifolio/projetocontato.html"><span class= textcolor>Cont</span>ato</a></h5>
+       
+    </li>
+</body>
+</html>

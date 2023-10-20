@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SobreMim</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        /*Aluno: Tiago de Jesus Ferreira
+          Ru: 3229818*/
+/*Primeira parte do titulo*/
+    .titulo{
+        
+        text-decoration:overline ; text-decoration-color: rgb(174, 179, 131);
+        text-align: center;
+        color:coral;
+        font-size: 40px;
+         
+      
+       
+        
+    }
+    /*Segunda parte do titulo*/
+    .titulo2{
+        text-decoration:overline ; text-decoration-color: rgb(174, 179, 131);
+        text-align: center;
+        color :dimgrey;
+        font-size: 40px;
+
+    }
+    /*Texto sobre mim e dimensoes da Borda onde esta o texto*/
+    h3{
+        
+        color:dimgrey;
+            
+            border-style:groove;
+            
+            background-color:beige  ;
+            border-radius: 50px; /* borda arredondada*/
+            width:40% ;/* tamanho da pagina*/ /*adapta o tamanho da tela*/
+            height: 100px;
+            padding-bottom:32%;
+            margin-right: 6%;
+            float:right ;
+
+           
+    }
+            /*Fundo do Perfil*/
+            .quadrado {
+            width: 500px; /* Largura do quadrado em pixels */
+            height: 550px; /* Altura do quadrado em pixels */
+            background-color:lightcyan; /* Cor de fundo do quadrado */
+            float:left;
+            border-top: 100%;
+           
+        }
+
+/*Fundo da tela*/
+    body{
+        background-color:coral;
+        color:white;
+        
+          
+    }
+    
+    
+        /* Estilo para a linha vertical do layout */
+        .linha-vertical {
+            position: absolute;
+            top: 50%;
+            width: 30px; /* Largura da linha em pixels */
+            height: 1200px; /* Altura da linha em pixels */
+            background-color:#d5d6aa;/* Cor da linha (preta neste exemplo) */
+            padding: 20px;
+            float: left;
+            margin-left:47%;
+            transform: translateY(-75%);
+           
+        }
+        .linha-vertical2 {
+            position: absolute;
+            top: 50%;
+            width: 30px; /* Largura da linha em pixels */
+            height: 1200px; /* Altura da linha em pixels */
+            background-color:#d5d6aa;/* Cor da linha (preta neste exemplo) */
+            padding: 20px;
+            float: left;
+            margin-left:42%;
+            transform: translateY(-75%);
+           
+           
+        }
+       
+        /*Muda a cor do menu quando passar o mouse em cima*/
+        a:hover{
+            color:orangered
+
+        }
+        /*Posição do Menu*/
+        li a{
+            color: #d5d6aa;
+           
+            display: inline;
+            float: top;
+            padding-right: 70px;
+            margin: -30px ;
+            font-size: 22px;
+            
+            
+        }
+        /*Tirando as marcações da lista do Menu*/
+        ul{
+            float:right;
+            list-style-type: none;
+           
+        }
+        /*Posição das fotos*/
+        .photo{
+           position: relative;
+           left: 26%;
+
+        }
+        .photo2{
+            position: relative;
+           left: 42%;
+           top: -35%;
+          
+        }
+        /*Posição e cor do nome completo*/
+        .nome{
+           
+            color: rgb(77, 73, 73);
+            margin-left: -23%;
+        }
+      
+       
+      
+    
+    </style>
+    
+    
+</head>
+<body>
+   
+<!--Configuração do perfil-->
+    <div class="quadrado"><!--Fundo do perfil-->
+        <br><br>
+        <!--Titulo do perfil-->
+        <h1 class="titulo">Analista &</h1> <h1 class="titulo2"> Desenvolvedor de Sistemas</h1>
+       
+        <br><br>
+        <!--Fotos do perfil-->
+        <div class="photo">
+        <img src="circulolaranja.png" width=" 280px" height="180px" >
+    </div>
+    <div class="photo2">
+        <img src="1697671310831.jpg"  height="180px" class="w3-circle" alt="Norway" style="width:28%" >
+        <br><br>
+        <!--Nome completo-->
+        <div class="nome">
+        <h1>Tiago de Jesus Ferreira</h1>
+        </div>
+    </div>
+    
+    </div>
+    
+    
+    <br><br>
+    <!--Menu da pagina-->
+    <div>
+        <ul>
+            <li>
+                <h5><a href="file:///C:/Users/thdej/OneDrive/%C3%81rea%20de%20Trabalho/Sites%20Html%20-%20Estudando/Primeira%20aula/Terceria%20aula/trabalhoportifolio/projetifolio.html">Inicio </a>
+                <a href="portfolioformacao.html">Formação Academica</a>
+                <a href="projetopart2.html">Projetos</a>
+                <a href="ProjetoTemplate.html">Template</a>
+                <a href="projetocontato.html">Contato</a></h5>
+               
+            </li>
+            <br><br><br>
+        </ul>
+        <!--Texto sobre mim-->
+        <h3><br>
+           
+            Com experiência em SAP e ERP, estou focado no aprimoramento contínuo das minhas habilidades.
+             Meu interesse está na análise e desenvolvimento de dados, e estou empenhado em fortalecer meu
+              conhecimento em MySQL, Java, CSS e HTML, além de  agregar  outros conhecimentos necessários ao
+               meu portfolio .Minha confiança e resiliência me motivam a fazer a diferença em qualquer ambiente.
+    </h3> 
+    </div>
+    <!--linhas do layout-->
+    <div class="linha-vertical"></div>
+    <div class="linha-vertical2"></div>
+    
+    
+    
+   
+    
+    
+   
+</body>
+</html>
