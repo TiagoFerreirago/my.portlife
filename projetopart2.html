@@ -41,12 +41,35 @@ a{
   margin-left: -48px;
   font-size: 20px;
 }
+@media screen and (max-width: 600px) {
+    .fundo{
+  
+  width: 150%;
+  height: 14000px;
+  background-color: white;
+  border: 5px solid; color:rgb(233, 217, 217);
+  position: absolute;
+  top:37%;
+  left:20%;
+  
+  font-size: 20px;
+  
+}
+}
 /*Titulo*/
 .txt{
     text-align: center;
     color: rgb(61, 58, 58);
     background-color: transparent;
     
+}
+@media screen and (max-width: 600px) {
+    .txt{
+    text-align: center;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    max-width: fit-content;
+    }
 }
 /*Subtitulo*/
 .txtm{
@@ -57,6 +80,16 @@ a{
     font-size: 30px;
     
 }
+@media screen and (max-width: 600px) {
+    .txtm{
+    text-align: center;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    transform: translate(0 , 400px);
+    font-size: 25px;
+    max-width: fit-content;
+    }
+}
 /*Rodape da pagina*/
 .txtl{
     text-align: center;
@@ -64,11 +97,29 @@ a{
     background-color: transparent;
     transform: translate(0px, 600px);
 }
+@media screen and (max-width: 600px) {
+    .txtl{
+    text-align: center;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    transform: translate(0px, 600px);
+    max-width: fit-content;
+    }
+}
 .txtR{
     text-align: center;
     color: rgb(61, 58, 58);
     background-color: transparent;
     transform: translate(0px, 800px);  
+}
+@media screen and (max-width: 600px) {
+    .txtR{
+    text-align: center;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    transform: translate(0px, 800px);  
+    max-width: fit-content;
+    }
 }
 /*Cor e posicionamento do resumo*/
 .txtRtwo{
@@ -77,6 +128,15 @@ a{
     background-color: transparent;
     transform: translate(0px, 1000px); 
     }
+ @media screen and (max-width: 600px) {
+    .txtRtwo{
+    text-align: center;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    transform: translate(0px, 1000px);
+    max-width: fit-content; 
+    }
+}
     /*Cor e posicionamento do sumário*/
     .txtthree{
     text-align: center;
@@ -84,6 +144,15 @@ a{
     background-color: transparent;
     transform: translate(0px, 1350px); 
     }
+@media screen and (max-width: 600px) {
+    .txtthree{
+    text-align: center;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    transform: translate(0px, 1350px); 
+    max-width: fit-content;
+    }
+}
     /*Cor,formato e posicionamento da introdução*/
     .txtintro{
     margin: 0 auto;
@@ -93,6 +162,17 @@ a{
     background-color: transparent;
     transform: translate(0, 1650px);
     }
+    @media screen and (max-width: 600px) {  
+        .txtintro{
+    margin: 0 auto;
+    word-wrap: break-word;
+    width: 60%;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    transform: translate(0, 1650px);
+    max-width: fit-content;
+    }
+} 
     /*Cor,formato e posicionamento do cronograma*/
     .txtCrono{
         margin: 0 auto;

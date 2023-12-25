@@ -15,12 +15,9 @@
         text-align: center;
         color:coral;
         font-size: 40px;
-         
-      
-       
         
     }
-    /*Segunda parte do titulo*/
+    /*segunda parte do titulo*/
     .titulo2{
         text-decoration:overline ; text-decoration-color: rgb(174, 179, 131);
         text-align: center;
@@ -43,7 +40,27 @@
             margin-right: 6%;
             float:right ;
 
-           
+    }
+    @media  screen and (max-width: 600px) {
+        h3{
+        
+        color:dimgrey;
+            
+            border-style:groove;
+            
+            background-color:beige  ;
+            border-radius: 50px; /* borda arredondada*/
+            width: 195% ;/* tamanho da pagina*/ /*adapta o tamanho da tela*/
+            height: 750px;
+            padding-bottom:65%;
+            margin-right: 6%;
+            float:right ;
+            transform:translate(66%, -5%);
+            line-height: 1.5;
+            font-size: 40px;
+            text-align: center;
+            
+        }
     }
             /*Fundo do Perfil*/
             .quadrado {
@@ -54,15 +71,33 @@
             border-top: 100%;
            
         }
+        @media screen and (max-width: 600px){
+            .quadrado {
+            position: static;
+            width: 1000px; /* Largura do quadrado em pixels */
+            height: 620px; /* Altura do quadrado em pixels */
+            background-color:lightcyan; /* Cor de fundo do quadrado */
+            border-top: 100%;
+            transform:translateX(0%);
+        }
+    }
 
 /*Fundo da tela*/
     body{
         background-color:coral;
         color:white;
+       
         
           
     }
-    
+    @media screen and (max-width: 600px) {
+    body {
+        background-color:coral;
+        color:white;
+        max-width:max-content;
+        
+    }
+}
     
         /* Estilo para a linha vertical do layout */
         .linha-vertical {
@@ -77,6 +112,17 @@
             transform: translateY(-75%);
            
         }
+
+        @media screen and (max-width: 600px) {
+               /*Fundo do Perfil*/
+            .linha-vertical {
+            width: 0px; /* Largura do quadrado em pixels */
+            height: 0px; /* Altura do quadrado em pixels */
+            background-color:transparent;/* Cor de fundo do quadrado */
+            
+           
+        }
+        }
         .linha-vertical2 {
             position: absolute;
             top: 50%;
@@ -87,52 +133,96 @@
             float: left;
             margin-left:42%;
             transform: translateY(-75%);
+        }
+        @media screen and (max-width: 600px) {
+               /*Fundo do Perfil*/
+            .linha-vertical2 {
+            width: 0px; /* Largura do quadrado em pixels */
+            height: 0px; /* Altura do quadrado em pixels */
+            background-color: transparent; /* Cor de fundo do quadrado */
            
            
+        }
         }
        
         /*Muda a cor do menu quando passar o mouse em cima*/
         a:hover{
             color:orangered
+            
 
         }
         /*Posição do Menu*/
         li a{
             color: #d5d6aa;
-           
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             display: inline;
             float: top;
             padding-right: 70px;
-            margin: -30px ;
-            font-size: 22px;
+            margin: -10px ;
+            font-size: 27px;
             
             
         }
+        @media screen and (max-width: 600px){
+            li a{
+            color: #d5d6aa;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display:flex;
+            font-size: 40px;
+        }
+    }
         /*Tirando as marcações da lista do Menu*/
         ul{
             float:right;
             list-style-type: none;
            
         }
+        @media screen and (max-width: 600px){
+            ul{
+            float:right;
+            list-style-type: none;
+            }
+        }
+        
         /*Posição das fotos*/
         .photo{
            position: relative;
            left: 26%;
-
+            
         }
         .photo2{
             position: relative;
            left: 23%;
-           top: -9%;
+           transform:translateY(-17%);
           
         }
+        @media screen and (max-width: 600px){
+            .photo2{
+            position: relative;
+            transform:translate(35% , -8%);
+           height: 350px;
+           max-width: fit-content;
+        }
+    }
         /*Posição e cor do nome completo*/
         .nome{
            
             color: rgb(77, 73, 73);
-            margin-left: -11%;
+            margin-left: 12%;
+            margin-top: -10%;
         }
-        
+        @media screen and (max-width: 600px) {
+            .nome {
+           
+           color: rgb(77, 73, 73);
+           margin-left: 25%;
+           margin-top: -3%;
+           font-size: 40px;
+           
+           
+           
+        }
+    }
       
     
     </style>
@@ -149,12 +239,12 @@
        
         <br><br>
    
-    <div class="photo2">
-        <img src="fotoperfilhtml2 (2).jpg"  height="300px" class="w3-circle" alt="Norway" style="width:50%" >
+    <div>
+        <img  src="fotoperfilhtml2 (2).jpg"  height="300px" class="w3-circle photo2" alt="Norway" style="width:50%" >
         <br>
         <!--Nome completo-->
-        <div class="nome">
-        <h1>Tiago de Jesus Ferreira</h1>
+        <div >
+        <h1 class="nome">Tiago de Jesus Ferreira</h1>
         </div>
     </div>
     
