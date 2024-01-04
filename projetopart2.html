@@ -20,12 +20,34 @@ ul{
    margin-top: 20px;
   
 }
+@media screen and (max-width: 600px) {
+    ul{
+   
+   list-style-type: none;
+   width:180%;
+   font-size: 35px;
+   margin-top: -10px;
+   
+   
+   
+  
+}
+}
 /*A cor e posicionamento do Menu */
 a{
  
    margin-left: 10.4%;
     color:rgb(221, 212, 133);
     
+    
+}
+@media screen and (max-width: 600px) {
+    a{
+    
+    
+    color:rgb(221, 212, 133);
+    margin-left: 2%;
+    }
 }
 /* definir o tamanho,cor e posicionamento da pagina de fundo central*/
 .fundo{
@@ -44,13 +66,13 @@ a{
 @media screen and (max-width: 600px) {
     .fundo{
   
-  width: 150%;
-  height: 14000px;
+  width: 145%;
+  height: 13400px;
   background-color: white;
   border: 5px solid; color:rgb(233, 217, 217);
   position: absolute;
   top:37%;
-  left:20%;
+  left:13%;
   
   font-size: 20px;
   
@@ -69,6 +91,7 @@ a{
     color: rgb(61, 58, 58);
     background-color: transparent;
     max-width: fit-content;
+    transform: translate(51%, 80%);
     }
 }
 /*Subtitulo*/
@@ -85,9 +108,10 @@ a{
     text-align: center;
     color: rgb(61, 58, 58);
     background-color: transparent;
-    transform: translate(0 , 400px);
+    
     font-size: 25px;
     max-width: fit-content;
+    transform: translate(65%, 1280%);
     }
 }
 /*Rodape da pagina*/
@@ -102,8 +126,9 @@ a{
     text-align: center;
     color: rgb(61, 58, 58);
     background-color: transparent;
-    transform: translate(0px, 600px);
+    transform: translate(35%, 440%);
     max-width: fit-content;
+    font-size: 26px;
     }
 }
 .txtR{
@@ -117,8 +142,9 @@ a{
     text-align: center;
     color: rgb(61, 58, 58);
     background-color: transparent;
-    transform: translate(0px, 800px);  
+    transform: translate(385px, 770px);  
     max-width: fit-content;
+    font-size: 26px;
     }
 }
 /*Cor e posicionamento do resumo*/
@@ -133,8 +159,26 @@ a{
     text-align: center;
     color: rgb(61, 58, 58);
     background-color: transparent;
-    transform: translate(0px, 1000px);
+    transform: translate(405px, 1000px);
     max-width: fit-content; 
+    font-size: 26px;
+    }
+}
+.txtRtwo2{
+    text-align: center;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    transform: translate(0px, 1000px); 
+    }
+@media screen and (max-width: 600px) {
+    .txtRtwo2{
+    text-align: center;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    transform: translate(165px, 1050px);
+    word-wrap:normal;
+    font-size: 26px;
+    width: 110%;
     }
 }
     /*Cor e posicionamento do sumário*/
@@ -149,8 +193,10 @@ a{
     text-align: center;
     color: rgb(61, 58, 58);
     background-color: transparent;
-    transform: translate(0px, 1350px); 
+    transform: translate(75px, 1350px); 
     max-width: fit-content;
+    font-size: 23px;
+    width: 155%;
     }
 }
     /*Cor,formato e posicionamento da introdução*/
@@ -166,11 +212,12 @@ a{
         .txtintro{
     margin: 0 auto;
     word-wrap: break-word;
-    width: 60%;
+    width: 140%;
     color: rgb(61, 58, 58);
     background-color: transparent;
-    transform: translate(0, 1650px);
+    transform: translate(70px, 1650px);
     max-width: fit-content;
+    font-size: 26px;
     }
 } 
     /*Cor,formato e posicionamento do cronograma*/
@@ -182,6 +229,17 @@ a{
     background-color: transparent;
     transform: translate(0px, 1850px);
     }
+    @media screen and (max-width: 600px) {
+        .txtCrono{
+        margin: 0 auto;
+    word-wrap:initial;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    transform: translate(80px, 1850px);
+    font-size: 26px;
+    width: 120%;
+    }
+}
     /*Cor,formato e posicionamento do planejamento*/
     .txtplan{
      margin: 0 auto;
@@ -191,6 +249,17 @@ a{
     background-color: transparent;
     transform: translate(0px, 2050px);
     }
+    @media screen and (max-width: 600px) {
+        .txtplan{
+     margin: 0 auto;
+    word-wrap: break-word;
+    width: 136%;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    transform: translate(70px, 2050px);
+    font-size: 26px;
+    }
+}
      /*Cor,formato e posicionamento do desenvolvimento*/
     .txtDesen{
      margin: 0 auto;
@@ -199,14 +268,36 @@ a{
     color: rgb(61, 58, 58);
     background-color: transparent;
     transform: translate(0px, 2250px);
+    
     }
+    @media screen and (max-width: 600px) {
+        .txtDesen{
+     margin: 0 auto;
+    word-wrap: break-word;
+    width: 138%;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    transform: translate(75px, 2250px);
+    font-size: 26px;
+    }
+}
      /*Posição das imagens ilustrativas do desenvolvimento*/
     .txtDesenImg img{
         transform: translate(400px ,2300px);
     }
+    @media screen and (max-width: 600px) {
+        .txtDesenImg img{
+        transform: translate(185px ,2300px);
+    }
+}
     .txtResultImg img{
         transform: translate(350px ,2870px);
     }
+    @media screen and (max-width: 600px) {
+        .txtResultImg img{
+        transform: translate(120px ,2870px);
+    }
+}
      /*Cor,formato e posicionamento do Objetivo*/
     .txtObj{
      margin: 0 auto;
@@ -216,6 +307,17 @@ a{
     background-color: transparent;
     transform: translate(0px, 2450px);
     }
+    @media screen and (max-width: 600px) {
+        .txtObj{
+     margin: 0 auto;
+    word-wrap: break-word;
+    width: 138%;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    transform: translate(80px, 2450px);
+    font-size: 26px;
+    }
+}
      /*Cor,formato e posicionamento da justificativa*/
     .txtJust{
      margin: 0 auto;
@@ -225,6 +327,17 @@ a{
     background-color: transparent;
     transform: translate(0px, 2650px);
     }
+    @media screen and (max-width: 600px) {
+        .txtJust{
+     margin: 0 auto;
+    word-wrap: break-word;
+    width: 138%;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    transform: translate(90px, 2650px);
+    font-size: 26px;
+    }
+}
      /*Cor,formato e posicionamento do resultado*/
     .txtResult{
      margin: 0 auto;
@@ -234,6 +347,17 @@ a{
     background-color: transparent;
     transform: translate(0px, 2850px);
     }
+    @media screen and (max-width: 600px) {
+        .txtResult{
+     margin: 0 auto;
+    word-wrap: break-word;
+    width: 140%;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    transform: translate(85px, 2850px);
+    font-size: 26px;
+    }
+}
     /*Cor,formato e posicionamento da conclusão*/
     .txtConc{
      margin: 0 auto;
@@ -243,6 +367,17 @@ a{
     background-color: transparent;
     transform: translate(0px, 3050px);
     }
+    @media screen and (max-width: 600px) {
+        .txtConc{
+     margin: 0 auto;
+    word-wrap: break-word;
+    width: 135%;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    transform: translate(100px, 3050px);
+    font-size: 26px;
+    }
+}
     /*Cor,formato e posicionamento da referência*/
     .txtRef{
      margin: 0 auto;
@@ -252,7 +387,17 @@ a{
     background-color: transparent;
     transform: translate(0px, 3350px);
     }
-
+    @media screen and (max-width: 600px) {
+        .txtRef{
+     margin: 0 auto;
+    word-wrap: break-word;
+    width: 130%;
+    color: rgb(61, 58, 58);
+    background-color: transparent;
+    transform: translate(110px, 3250px);
+    font-size: 26px;
+    }
+    }
 </style>
 </head>
 <!--Menu da pagina-->
@@ -287,7 +432,7 @@ a{
        <section>
         <!--Contéudo do Resumo-->
         <h3 class="txtRtwo">RESUMO</h3><br><br><br><br><br>
-        <h3 class="txtRtwo">Com o intuito de ajudar os mais necessitados, e de preservar o meio ambiente, os alunos<br>
+        <h3 class="txtRtwo2">Com o intuito de ajudar os mais necessitados, e de preservar o meio ambiente, os alunos<br>
              da UNINTER (Centro Universitário Internacional), com apoio do governo desenvolveu<br> uma solução
               tecnológica capaz de solucionar a falta de energia do distrito de Alecrim,<br> localizado na região da
                Chapada Diamantina, esse projeto busca utilizar fontes renováveis<br> e não poluentes para iluminar o local,
@@ -347,7 +492,7 @@ a{
         <h3 class="txtCrono">2. CRONOGRAMA<br><br><br><br>
             Abaixo está o cronograma que foi aplicado para o desenvolvimento do aplicativo e do software.<br><br>
           <!--Imagem do cronograma-->
-            <img src="htmlcrono.png" width="800px">
+            <img src="htmlcrono.png" width="750px">
         </h3>
        </section>
          <!--Contéudo do Planejamento-->

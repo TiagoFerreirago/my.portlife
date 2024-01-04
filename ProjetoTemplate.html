@@ -11,34 +11,56 @@
   /*Cor do fundo da pagina*/
     body{
             background-color: coral;
+          
     }
       /*Posição e tamanho do Menu*/
         ul{
            
            list-style-type: none;
            
-           font-size: 23.5px;
-           margin-top: -2730px;
-          
+           font-size: 27px;
+           margin-top: 350px;
+         
         }
+        li{
+          transform: translateY(-750%);
+        }
+        @media screen and (max-width: 600px){
+
+          ul{
+          
+           margin-top: -5050px;
+           transform: translateX(15%);
+        }
+      }
         /*Cor do Menu*/
         a{
          
            margin-left: 10%;
             color:rgb(221, 212, 133);
             
+            
         }
+        @media screen and (max-width: 600px){
+          a{
+            font-size: 20px;
+            color:rgb(221, 212, 133);
+            padding-left:0%;
+            margin-left: 1%;
+         
+      }
+    }
         /*Fundo e posicionamento do texto central*/
         .fundo{
           
           width: 800px;
-          height: 4400px;
+          height: 5000px;
           background-color: white;
           border: 5px solid; color:rgb(233, 217, 217);
           position: absolute;
           top:40%;
           left:50%;
-          margin-top: -100px;
+          margin-top: 0px;
           margin-left: -410px;
           text-align: center;
           font-size: 40px;
@@ -52,6 +74,31 @@
           color: red;
          
       }
+      @media screen and (max-width: 600px){
+        .fundo{
+          
+          width: 800px;
+          height: 5400px;
+          background-color: white;
+          border: 5px solid; color:rgb(233, 217, 217);
+          position: absolute;
+          top:40%;
+          left:50%;
+          margin-top: -100px;
+          margin-left: -240px;
+          text-align: center;
+          font-size: 40px;
+          
+      }
+       /*Cor da borda e do Titulo*/
+       .fundo{color:black;
+      }
+     /*Cor da primeira letra do Titulo*/
+      .fundo::first-letter{     
+          color: red;
+         
+      }
+      }
        /*Posição do texto*/
       .titulo{
         margin-top: -100px;
@@ -59,54 +106,115 @@
           text-align: center;
         
       }
-       /*Tamanho e posição padrão das imagens*/
-      img{
-        position: absolute;
-        height: 80%;
-        width: 53%;
-        margin-left: 24%;
-      }
+      
+      
       /*As classes org define o posicionamento das imagens*/
       .org5{
-        position: absolute;
-        height: 87%;
-        width: 47%;
-        margin-left: 12%;
-        margin-top: 550px;
+        width: 60%;
+          height: 70%;
+          transform: translate(34%, 96%);
         background-color: transparent;
+      }
+      @media screen and (max-width: 600px) {
+        .org5{
+        width: 138%;
+          height: 70%;
+          transform: translate(7%, 112%);
+        background-color: transparent;
+        }
       }
       .org{
-        margin-top: 400px;
-        margin-left: -1%;
+        width: 60%;
+        height: 70%;
+        transform: translate(42%, 5%);
+      }
+      @media screen and (max-width: 600px) {
+        .org{
+        margin-top: 0px;
+        margin-left: -40%;
+        height: 460px;
+        width: 900px;
+        
+      }
       }
       .org1{
-        margin-top: 1100px;
-        margin-left: -1%;
+        width: 65%;
+        height: 70%;
+        transform: translate(31%, 25%);
       }
+      @media screen and (max-width: 600px) {
+        .org1{
+        width: 800px;
+        transform: translate(10%,70%);
+        height: 700px;
+      }
+    }
       .org2{
-        margin-top: 1700px;
-        margin-left: -1%;
+        width: 14.5%;
+          height: 60%;
+          transform: translate(137%, 45%);
+      }
+      @media screen and (max-width: 600px) {
+        .org2{
+          width: 35%;
+          height: 60%;
+          transform: translate(30%, 85%);
+        }
       }
       .org3{
-        margin-top: 2200px;
-        margin-left: -1%;
+        width: 60%;
+          height: 70%;
+          transform: translate(32.8%, 75%);
       }
+      @media screen and (max-width: 600px) {
+        .org3{
+          width: 145%;
+          height: 70%;
+          transform: translate(5.5%, 105%);
+      }
+    }
       .org4{
-        background-color: transparent;
-        position: absolute;
-        height: 89%;
-        width: 47%;
-        margin-left: 39%;
-        margin-top: 553px;
-       
+        
+          transform: translate(124%,-5%);
+          background-color: transparent;
+          width: 40%;
       }
-      .org6{
-        margin-top: 1100px;
-        margin-left:  1%;
-        height: 125%;
-        width: 95%;
-        position: absolute;
+      @media screen and (max-width: 600px) {
+        .org4{
+        
+        transform: translate(86%,  11%);
         background-color: transparent;
+        width: 95%;
+    }
+  }
+      .org6{
+        width: 55%;
+        height: 70%;
+        transform: translate(37%,20%);
+        
+        background-color: transparent;
+      }
+      @media screen and (max-width: 600px) {
+        .org6{
+        width: 139%;
+        height: 70%;
+        transform: translate(5%, 40%);
+        
+        background-color: transparent;
+      }
+    }
+      .template{
+          width:  55%;
+          height: 70%;
+          transform: translate(44%, 15%);
+        }
+
+      @media screen and (max-width: 600px){
+        .template{
+          width: 140%;
+          height: 700px;
+          transform: translateX(9.5%);
+        }
       }
       
       
@@ -115,25 +223,6 @@
       
 </style>
 <body>
-    <br>
-    <h1 class="fundo" >PSecuranty</h1><!--Fundo junto com Titulo do texto -->
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <!--Texto do pitch-->
-    <img src="templatehtml.png">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <!--Imagem do mapa mental-->
-    <div class="org"><img src="templatemaphtml.png"></div>
-    <!--Imagem do protótipo do aplicativo no menu tela inicial -->
-    <div class="org1"> <img src="tela01.png"></div>
-    <!--Imagem do protótipo do aplicativo no menu relatório-->
-    <div class="org2"> <img src="tela02.png"></div>
-    <div class="org3"> <img src="tela03.png"></div>
-    <!--Imagem do protótipo do aplicativo no menu mapa-->
-    <div class="org5" > <img src="tela04.png" ></div>
-     <!--Imagem do protótipo do aplicativo no menu feedback-->
-    <div class="org4" > <img src="tela 05.png" ></div>
-     <!--Imagem do diagrama de casos de uso UML-->
-    <div class="org6" > <img src="umlhtml.png" ></div>
    <!--Menu da pagina-->
     <ul>
         <li>
@@ -144,5 +233,26 @@
             <a href="projetocontato.html">Contato</a></h5>
            
         </li>
+    </ul>
+    <br>
+    <h1 class="fundo" >PSecuranty</h1><!--Fundo junto com Titulo do texto -->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!--Texto do pitch-->
+    <img class = "template" src="templatehtml.png" >
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!--Imagem do mapa mental-->
+    <div class="org"><img src="templatemaphtml.png"></div>
+    <!--Imagem do protótipo do aplicativo no menu tela inicial -->
+    <div class="org1"> <img src="tela01.png" width="90%"></div>
+    <!--Imagem do protótipo do aplicativo no menu relatório-->
+    <div class="org2"> <img src="tela02.png" height="530px" width="400%"></div>
+    <div class="org3"> <img src="tela03.png" height="500px" width="100%"></div>
+    <!--Imagem do protótipo do aplicativo no menu mapa-->
+    <div class="org5" > <img src="tela04.png" width="48%" height="500px" ></div>
+     <!--Imagem do protótipo do aplicativo no menu feedback-->
+    <div class="org4" > <img src="tela 05.png" width="75%" height="510px" ></div>
+     <!--Imagem do diagrama de casos de uso UML-->
+    <div class="org6" > <img src="umlhtml.png" width="105%" ></div>
+  
 </body>
 </html>
