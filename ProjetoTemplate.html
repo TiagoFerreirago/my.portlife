@@ -14,43 +14,58 @@
           
     }
       /*Posição e tamanho do Menu*/
-        ul{
-           
-           list-style-type: none;
-           
-           font-size: 27px;
-           margin-top: 350px;
-         
-        }
-        li{
-          transform: translateY(-750%);
-        }
-        @media screen and (max-width: 600px){
-
-          ul{
-          
-           margin-top: -5050px;
-           transform: translateX(15%);
-        }
-      }
-        /*Cor do Menu*/
-        a{
-         
-           margin-left: 10%;
-            color:rgb(221, 212, 133);
-            
-            
-        }
-        @media screen and (max-width: 600px){
-          a{
-            font-size: 20px;
-            color:rgb(221, 212, 133);
-            padding-left:0%;
-            margin-left: 1%;
-         
-      }
+      ul {
+      list-style-type: none;
+      margin: 80px;
+      padding: 0px;
+      overflow: hidden;
+      background-color: coral; /* Cor de fundo do menu */
     }
-        /*Fundo e posicionamento do texto central*/
+    @media screen and (max-width: 600px){
+
+      ul {
+      list-style-type: none;
+      margin: 30px;
+      padding: 10px;
+      overflow: hidden;
+      background-color: coral; /* Cor de fundo do menu */
+    }
+    } 
+    li {
+      float: left;
+      transform: translateY(-40px);
+    }
+    li a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 60px;
+      text-decoration: none;
+      font-size: 24px;
+    }
+
+    li a:hover {
+      background-color: rgb(255, 254, 254, 0.2); /* Cor de fundo ao passar o mouse */
+    }
+    @media screen and (max-width: 600px){
+    
+      li {
+    float: none; /* Remova o float para garantir disposição vertical */
+    display: block; /* Altere para block para empilhar os itens verticalmente */
+    width: 150%; /* Ocupar a largura total disponível */
+    box-sizing: border-box; /* Inclua a largura do padding e da borda na largura total */
+    transform: translateX(50px); /* Remova a transformação translateY se não for mais necessária */
+    position: absolute;
+  }
+    
+
+     li a {
+    padding: 0px 18px;
+    font-size: 30px;
+    
+    }
+  }
+
         .fundo{
           
           width: 800px;
@@ -58,7 +73,7 @@
           background-color: white;
           border: 5px solid; color:rgb(233, 217, 217);
           position: absolute;
-          top:40%;
+          top:30%;
           left:50%;
           margin-top: 0px;
           margin-left: -410px;
@@ -77,15 +92,15 @@
       @media screen and (max-width: 600px){
         .fundo{
           
-          width: 800px;
-          height: 5400px;
+          width: 850px;
+          height: 5900px;
           background-color: white;
           border: 5px solid; color:rgb(233, 217, 217);
           position: absolute;
-          top:40%;
+          top:45%;
           left:50%;
           margin-top: -100px;
-          margin-left: -240px;
+          margin-left: -190px;
           text-align: center;
           font-size: 40px;
           
@@ -112,77 +127,76 @@
       .org5{
         width: 60%;
           height: 70%;
-          transform: translate(34%, 96%);
+          transform: translate(34%, 54%);
         background-color: transparent;
       }
       @media screen and (max-width: 600px) {
         .org5{
         width: 138%;
           height: 70%;
-          transform: translate(7%, 112%);
+          transform: translate(13.5%, 202%);
         background-color: transparent;
         }
       }
       .org{
-        width: 60%;
+        width: 59%;
         height: 70%;
-        transform: translate(42%, 5%);
+        transform: translate(35%, -40%);
       }
       @media screen and (max-width: 600px) {
         .org{
-        margin-top: 0px;
-        margin-left: -40%;
+        transform: translate(15%, 0%);
         height: 460px;
-        width: 900px;
+        width:140%;
         
       }
       }
       .org1{
         width: 65%;
         height: 70%;
-        transform: translate(31%, 25%);
+        transform: translate(31%, -10%);
       }
       @media screen and (max-width: 600px) {
         .org1{
-        width: 800px;
-        transform: translate(10%,70%);
+        width: 830px;
+        transform: translate(18%,60%);
         height: 700px;
       }
     }
       .org2{
         width: 14.5%;
           height: 60%;
-          transform: translate(137%, 45%);
+          transform: translate(137%, 10%);
       }
       @media screen and (max-width: 600px) {
         .org2{
-          width: 35%;
+          width: 32%;
           height: 60%;
-          transform: translate(30%, 85%);
+          transform: translate(80%, 110%);
         }
       }
       .org3{
         width: 60%;
           height: 70%;
-          transform: translate(32.8%, 75%);
+          transform: translate(32.8%, 35%);
       }
       @media screen and (max-width: 600px) {
         .org3{
-          width: 145%;
+          width: 135%;
           height: 70%;
-          transform: translate(5.5%, 105%);
+          transform: translate(18%, 160%);
       }
     }
       .org4{
         
-          transform: translate(124%,-5%);
+          transform: translate(124%,-45%);
           background-color: transparent;
           width: 40%;
       }
       @media screen and (max-width: 600px) {
         .org4{
         
-        transform: translate(86%,  11%);
+        transform: translate(96%, 102%);
         background-color: transparent;
         width: 95%;
     }
@@ -190,30 +204,31 @@
       .org6{
         width: 55%;
         height: 70%;
-        transform: translate(37%,20%);
+        transform: translate(37%,-15%);
         
         background-color: transparent;
       }
       @media screen and (max-width: 600px) {
         .org6{
-        width: 139%;
+        width: 130%;
         height: 70%;
-        transform: translate(5%, 40%);
+        transform: translate(17%, 120%);
         
         background-color: transparent;
       }
     }
       .template{
-          width:  55%;
+         
           height: 70%;
-          transform: translate(44%, 15%);
+          width: 55%;
+          transform: translate(45%, -35%);
         }
 
       @media screen and (max-width: 600px){
         .template{
-          width: 140%;
+          width: 135%;
           height: 700px;
-          transform: translateX(9.5%);
+          transform: translate(22%, 0%);
         }
       }
       
@@ -241,7 +256,7 @@
     <img class = "template" src="templatehtml.png" >
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <!--Imagem do mapa mental-->
-    <div class="org"><img src="templatemaphtml.png"></div>
+    <div class="org"><img src="templatemaphtml.png" width="100%"></div>
     <!--Imagem do protótipo do aplicativo no menu tela inicial -->
     <div class="org1"> <img src="tela01.png" width="90%"></div>
     <!--Imagem do protótipo do aplicativo no menu relatório-->
@@ -250,7 +265,7 @@
     <!--Imagem do protótipo do aplicativo no menu mapa-->
     <div class="org5" > <img src="tela04.png" width="48%" height="500px" ></div>
      <!--Imagem do protótipo do aplicativo no menu feedback-->
-    <div class="org4" > <img src="tela 05.png" width="75%" height="510px" ></div>
+    <div class="org4" > <img src="tela 05.png" width="75%" height="500px" ></div>
      <!--Imagem do diagrama de casos de uso UML-->
     <div class="org6" > <img src="umlhtml.png" width="105%" ></div>
   
